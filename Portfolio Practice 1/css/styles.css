@@ -1,4 +1,3 @@
-
 :root {
     --smoky-black: #151313;
     --primary-violet: #5551FF;
@@ -32,6 +31,10 @@ body {
 .gradient {
     background: linear-gradient(90deg, rgba(85,81,255,1) 32%, rgba(105,155,247,1) 68%);
     height: 2px;
+}
+
+.projects-div {
+    background-color: var(--dark-blue);
 }
 
 h1, h2, h3 {
@@ -152,7 +155,6 @@ nav [class*="fa-"] {
 }
 
 #projects {
-    background-color: var(--dark-blue);
     padding: 4rem 1rem;
 }
 
@@ -202,10 +204,18 @@ nav [class*="fa-"] {
 }
 
 @media (min-width: 550px){
+    #intro {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     article {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(10, 1fr);
+    }
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
     }
     #projects img {
         grid-column: 1/6;
